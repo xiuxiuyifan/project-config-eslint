@@ -1,5 +1,15 @@
 {
-  extends: [
+  "extends": [
     "stylelint-config-standard","stylelint-config-recess-order"
+  ],
+  "overrides": [
+    {
+      "files": ["**/*.less"],
+      "customSyntax": "postcss-less"
+    },
+    {
+      "files": ["**/*.scss"],
+      "customSyntax": "postcss-scss"
+    }
   ]
 }
