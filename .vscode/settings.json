@@ -1,0 +1,14 @@
+{
+  // 注意这个是 false，很大原因都是因为这个
+  "editor.formatOnSave": false,
+  "editor.defaultFormatter": "dbaeumer.vscode-eslint",
+  "editor.codeActionsOnSave": {
+    "source.fixAll": true
+  },
+  "eslint.format.enable": true,
+  "eslint.options": {
+	  //指定vscode的eslint所处理的文件的后缀
+	  "extensions": [".js"]
+	},
+  "prettier.enable": false,
+}
