@@ -1,13 +1,14 @@
 {
   "name": "project-config",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "index.js",
   "license": "MIT",
   "scripts": {
     "prepare": "husky install",
     "lint": "yarn eslint & yarn stylelint",
     "eslint": "eslint --ext .js",
-    "stylelint": "stylelint src/**/*.{css,less,scss} --fix"
+    "stylelint": "stylelint src/**/*.{css,less,scss} --fix",
+    "release": "standard-version"
   },
   "devDependencies": {
     "@commitlint/config-conventional": "^16.2.4",
@@ -18,6 +19,7 @@
     "lint-staged": "^12.4.1",
     "postcss-less": "^6.0.0",
     "postcss-scss": "^4.0.4",
+    "standard-version": "^9.3.2",
     "stylelint": "^14.8.2",
     "stylelint-config-recess-order": "^3.0.0",
     "stylelint-config-standard": "^25.0.0"
