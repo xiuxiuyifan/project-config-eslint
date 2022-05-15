@@ -3,12 +3,21 @@
   "editor.formatOnSave": false,
   "editor.defaultFormatter": "dbaeumer.vscode-eslint",
   "editor.codeActionsOnSave": {
-    "source.fixAll": true
+    "source.fixAll.eslint": true,
+    "source.fixAll.stylelint": true,
   },
   "eslint.format.enable": true,
-  "eslint.options": {
-	  //指定vscode的eslint所处理的文件的后缀
-	  "extensions": [".js"]
-	},
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact",
+  ],
   "prettier.enable": false,
+  "stylelint.snippet": [
+    "css",
+    "less",
+    "postcss",
+    "scss"
+  ]
 }
