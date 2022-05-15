@@ -5,7 +5,9 @@
   "license": "MIT",
   "scripts": {
     "prepare": "husky install",
-    "lint": "eslint --ext .js,.jsx src"
+    "lint": "yarn eslint & yarn stylelint",
+    "eslint": "eslint --ext .js",
+    "stylelint": "stylelint src/**/*.{css,less,scss} --fix"
   },
   "devDependencies": {
     "@commitlint/config-conventional": "^16.2.4",
